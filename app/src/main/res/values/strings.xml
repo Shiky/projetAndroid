@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Projet_android</string>
+
+    <string-array name="Spinner_genre">
+        <item>Genre</item>
+        <item>Mr</item>
+        <item>Mme</item>
+    </string-array>
+</resources>
