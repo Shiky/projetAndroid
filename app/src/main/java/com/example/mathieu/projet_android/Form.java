@@ -24,14 +24,14 @@ public class Form extends AppCompatActivity  implements AdapterView.OnItemSelect
     Button valide;
     CheckBox info,sport,voy,musique;
     SharedPreferences.Editor sp;
-    String formStock;
-     String nomCle,prenomCle,mailCle,adresseCle,genreCle;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_form);
-
+        sp=getSharedPreferences("formStock",MODE_PRIVATE).edit();
 
         genre = (Spinner) findViewById(R.id.Spinner_genre);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
@@ -53,7 +53,7 @@ public class Form extends AppCompatActivity  implements AdapterView.OnItemSelect
             public void onClick(View v) {
                 Intent i = new Intent(Form.this,AfficherForm.class);
 
-                    sp=getSharedPreferences(formStock,MODE_PRIVATE).edit();
+
 
                     sp.putString("nomCle",nom.getText().toString());
                     sp.putString("prenomCle",prenom.getText().toString());
@@ -111,9 +111,9 @@ public class Form extends AppCompatActivity  implements AdapterView.OnItemSelect
                 }break;
         }
     }
-*/
+
     public void ajoutImage(View view) {
 
-    }
+    }*/
 }
 

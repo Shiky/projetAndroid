@@ -12,7 +12,8 @@ public class AfficherForm extends AppCompatActivity {
    TextView civi,nom,prenom,addresse,email,hobbies;
    String civilForm,nomForm,prenomForm,mailForm,addresseForm,hobiesForm;
     SharedPreferences sp;
-    @SuppressLint("WrongViewCast")
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,8 +38,8 @@ public class AfficherForm extends AppCompatActivity {
 
         civi= findViewById(R.id.TV_civAffichage);
          nom=findViewById(R.id.TV_nomAffiche)  ;
-         prenom=findViewById(R.id.TV_prenomnomAffiche)  ;
-       email=findViewById(R.id.TV_emailAffiche);
+         prenom=findViewById(R.id.TV_prenomAffiche)  ;
+       email=findViewById(R.id.TV_mailAffiche);
         addresse=findViewById(R.id.TV_addresseAffichage);
         hobbies=findViewById(R.id.TV_hobbiesAffichage);
 
